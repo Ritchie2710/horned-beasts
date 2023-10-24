@@ -1,9 +1,18 @@
 import HornBeasts from "./HornBeasts";
-
+import Data from "./data.json";
 export default function Gallery() {
   return (
     <>
       <h2>Horn Beasts</h2>
+      {Data.map((data) => {
+        return (
+          <HornBeasts
+            img={data.image_url}
+            description={data.description}
+            title={data.title}
+          />
+        );
+      })}
       <HornBeasts
         title="Rhino"
         imageUrl="https://c02.purpledshub.com/uploads/sites/62/2014/09/Black-rhino-calf-GettyImages-164158552-eea7319-scaled.jpg"

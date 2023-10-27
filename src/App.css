@@ -1,7 +1,10 @@
 body {
-  background-image: url("https://thisisbeast.com/cdn/shop/files/Beast_Logo_on_Black_300x300.jpg?v=1614404868");
-  color: lightblue;
-  font-size: 15px;
+  background-image: url("https://ih1.redbubble.net/image.4980392803.4106/st,small,507x507-pad,600x600,f8f8f8.jpg");
+  background-repeat: repeat repeat-x;
+  background-position: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 img {
   height: 200px;
@@ -12,4 +15,14 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 
   grid-template-rows: 1fr;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
 }

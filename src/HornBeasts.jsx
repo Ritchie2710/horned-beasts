@@ -10,8 +10,9 @@ export default function HornBeasts(props) {
     <>
       <div key={`heresyourstupidkey${props.id}`}>
         <h2>{props.title}</h2>
-        <img src={props.image_url} />
-        <p>{props.description}</p>👍<p>0</p>
+        <img src={props.image_url} onClick={props.handleShowModal} />
+        <p>{props.description}</p>
+        <p onClick={handleClick}>👍 {likes}</p>
       </div>
     </>
   );
